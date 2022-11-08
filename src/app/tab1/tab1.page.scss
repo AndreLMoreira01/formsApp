@@ -1,0 +1,42 @@
+ion-content{
+  --ion-background-color:#6d4fc0;
+}
+
+.bot{
+text-align: center;
+}
+
+
+.bot1{
+  text-align: center;
+  }
+
+.area {
+  font-size: large;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 75%;
+label {
+  color: #ffffff;
+  transition: transform .25s,
+  opacity .25s;
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+label::before {
+  opacity: 0;
+}
+}
+
+.login:focus-within label {
+  transform: translateX(26px);
+}
+
+.login:focus-within label::before {
+  opacity: 1;
+  transition-delay: .1s;
+}
