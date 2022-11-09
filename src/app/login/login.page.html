@@ -2,36 +2,41 @@
 
 <ion-content>
 
-<div>
+  <div>
     <div class="area">
       <div class="login">
-
-        <input placeholder="Digite o seu nome">
+        <label class="username">Email</label>
+        <input placeholder="Digite o seu Email">
       </div>
 
-      <div>
+      <div class="login">
+        <label class="senha">Senha</label>
         <input type="password" placeholder="Senha do Usuário">
       </div>
 
+      <p>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label> Manter Conectado</ion-label>
+      </p>
+
+      <div>
+        <div class="bot1" >
+          <ion-button  shape="round" color="purple">Entrar</ion-button>
+        </div>
+
+        <div class="bot">
+          <ion-button  routerLink="/registro" shape="round" size="small" color="purple">Registrar</ion-button>
+        </div>
+
+        <div class="bot">
+          <ion-button  shape="round" size="small" color="purple">Esqueceu Senha</ion-button>
+        </div>
+
     </div>
 
-    <ion-item>
-      <ion-checkbox slot="start"></ion-checkbox>
-      <ion-label>Manter Conectado</ion-label>
-    </ion-item>
-
-<div class="bot1">
-  <ion-button  shape="round">Entrar</ion-button>
 </div>
 
-<div class="bot">
-  <ion-button  routerLink="/registro" shape="round" size="small">Registrar</ion-button>
-</div>
 
-<div class="bot">
-  <ion-button  shape="round" size="small">Esqueceu Senha</ion-button>
-</div>
+  </div>
 
-</div>
-
-</ion-content>
+  </ion-content>
