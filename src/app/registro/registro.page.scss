@@ -2,7 +2,7 @@ ion-content{
   --ion-background-color:#6d4fc0;
 }
 
-.area {
+.a {
   font-size: large;
   position: relative;
   display: flex;
@@ -12,7 +12,7 @@ ion-content{
   margin-top: 185px;
   font-weight: bold;
 
-label {
+  ion-label {
   color: #111010;
   transition: transform .25s,
   opacity .25s;
@@ -21,18 +21,6 @@ label {
   font-weight: bold;
 }
 
-label::before {
-  opacity: 0;
-}
-
-.login:focus-within label {
-  transform: translateX(26px);
-}
-
-.login:focus-within label::before {
-  opacity: 1;
-  transition-delay: .1s;
-}
 
 input {
   margin-top: 2px;
@@ -43,7 +31,6 @@ input {
   display: block;
   padding: 10px;
   border: none;
-  outline: none;
   border-radius: 25px;
   font-weight: 400;
 }

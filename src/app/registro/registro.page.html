@@ -3,30 +3,30 @@
 <ion-content>
 
   <div>
-    <div class="area">
+    <div class="a">
       <div class="login">
-        <label class="username">Nome</label>
+        <ion-label class="username">Nome</ion-label>
         <input placeholder="Digite o seu nome">
       </div>
 
       <div class="login">
-        <label class="username">CPF</label>
+        <ion-label class="username">CPF</ion-label>
         <input placeholder="Digite o seu CPF">
       </div>
 
       <div class="login">
-        <label class="username">Email</label>
+        <ion-label class="username">Email</ion-label>
         <input placeholder="Digite o seu Email">
       </div>
 
       <div class="login">
-        <label class="username">Senha</label>
+        <ion-label class="username">Senha</ion-label>
         <input type="Password" placeholder="Senha do Usuário">
       </div>
 
       <div class="login">
-        <label class="senha">Confirmar Senha</label>
-        <input type="Password" placeholder="Confirmar Senha">
+        <ion-label class="username">Confirmar Senha</ion-label>
+        <input type="Password" placeholder="Confirmar Senha do Usuário">
       </div>
 
       <p>
@@ -36,11 +36,15 @@
 
       <div>
         <div class="bot1" >
-          <ion-button  shape="round" color="purple" size="small">Salvar</ion-button>
+          <ion-button  shape="round" color="purple" routerLink="/login">Entrar</ion-button>
         </div>
 
         <div class="bot">
-          <ion-button  routerLink="/login" shape="round" size="small" color="purple">Voltar</ion-button>
+          <ion-button  routerLink="/registro" shape="round" size="small" color="purple">Registrar</ion-button>
+        </div>
+
+        <div class="bot">
+          <ion-button  shape="round" size="small" color="purple">Esqueceu Senha</ion-button>
         </div>
 
     </div>
