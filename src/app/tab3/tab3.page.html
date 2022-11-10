@@ -1,12 +1,57 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-<p routerLink="/registro">Registro</p>
-<p routerLink="/login">Login</p>
-</ion-content>
+
+<ion-content>
+
+  <div>
+    <div class="a">
+      <div class="login">
+        <ion-label class="username">Nome</ion-label>
+        <input placeholder="Digite o seu nome">
+      </div>
+
+      <div class="login">
+        <ion-label class="username">CPF</ion-label>
+        <input placeholder="Digite o seu CPF">
+      </div>
+
+      <div class="login">
+        <ion-label class="username">Email</ion-label>
+        <input placeholder="Digite o seu Email">
+      </div>
+
+      <div class="login">
+        <ion-label class="username">Senha</ion-label>
+        <input type="Password" placeholder="Senha do Usuário">
+      </div>
+
+      <div class="login">
+        <ion-label class="username">Confirmar Senha</ion-label>
+        <input type="Password" placeholder="Confirmar Senha do Usuário">
+      </div>
+
+      <p>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <ion-label> Manter Conectado</ion-label>
+      </p>
+
+      <div>
+        <div class="bot1" >
+          <ion-button  shape="round" color="purple" routerLink="/login" size="small">Entrar</ion-button>
+        </div>
+
+        <div class="bot">
+          <ion-button  routerLink="/registro" shape="round" size="small" color="purple">Registrar</ion-button>
+        </div>
+
+        <div class="bot">
+          <ion-button  shape="round" size="small" color="purple">Esqueceu Senha</ion-button>
+        </div>
+
+    </div>
+
+</div>
+
+
+  </div>
+
+  </ion-content>
