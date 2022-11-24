@@ -3,11 +3,17 @@ ion-content{
 }
 .bot{
   text-align: center;
+
+ion-button {
+  color: #111010;
+  font-weight: bold;
+}
+
+
 }
 
 .a {
   font-size: large;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,37 +23,7 @@ ion-content{
 
   ion-label {
   color: #111010;
-  transition: transform .25s,
-  opacity .25s;
-  display: inline-flex;
-  margin-top: 25px;
   font-weight: bold;
 }
-
-
-input {
-  margin-top: 2px;
-  background-color: #9d83e4;
-  opacity: 100;
-  width: 250px;
-  height: 35px;
-  display: block;
-  padding: 10px;
-  border: none;
-  outline: none;
-  border-radius: 25px;
-  font-weight: 400;
-}
-
-input::placeholder {
-  color: rgb(0, 0, 0);
-  transition: opacity .25s;
-}
-
-input:focus::placeholder {
-  opacity: 0;
-}
-
-
 
 }
