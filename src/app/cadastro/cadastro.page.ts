@@ -14,7 +14,7 @@ export class CadastroPage implements OnInit {
     this.formCadastro = this.formBuilder.group({
       nome: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
       descricao: ['', Validators.compose([Validators.required, Validators.maxLength(20)])],
-      validade: ['', Validators.compose([Validators.required, Validators.minLength(8)])],
+      validade: ['', Validators.compose([Validators.required, Validators.maxLength(8)])],
       preco: ['', Validators.compose([Validators.required, Validators.maxLength(8)])]
     });
   }
