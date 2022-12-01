@@ -15,32 +15,36 @@
           <h1>Cadastro do Produto</h1>
         </div>
 
+<form [formGroup]="formCadastro">
+  <div>
+    <ion-label class="nome">Nome</ion-label>
+    <ion-input formControlName="nome" placeholder="Digite o nome do produto"></ion-input>
+  </div>
 
-        <div>
-          <ion-label class="nome">Nome</ion-label>
-          <ion-input placeholder="Digite o nome do produto"></ion-input>
-        </div>
+  <div>
+    <ion-label class="desc">Descrição</ion-label>
+    <ion-input placeholder="Digite a Descrição"></ion-input>
+  </div>
 
-        <div>
-          <ion-label class="desc">Descrição</ion-label>
-          <ion-input placeholder="Digite a Descrição"></ion-input>
-        </div>
+  <div>
+    <ion-label class="validade">Validade</ion-label>
+    <ion-input placeholder="Digite a Validade"></ion-input>
+  </div>
 
-        <div>
-          <ion-label class="validade">Validade</ion-label>
-          <ion-input placeholder="Digite a Validade"></ion-input>
-        </div>
+  <div>
+    <ion-label class="preco">Preço</ion-label>
+    <ion-input placeholder="Digite o preço"></ion-input>
+  </div>
+</form>
 
-        <div>
-          <ion-label class="preco">Preço</ion-label>
-          <ion-input placeholder="Digite o preço"></ion-input>
-        </div>
 
       </div>
 
     </ion-list>
   </div>
   </div>
+
+  <ion-button expand="block" (click)="salvarCadastro()"> Manter Conectado</ion-button>
 
 
 </ion-content>
