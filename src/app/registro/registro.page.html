@@ -5,10 +5,10 @@
   <div>
     <div class="a">
 
-      <div>
+      <form [formGroup]="formRegistro">
         <div>
           <ion-label class="nome">Nome</ion-label>
-          <ion-input placeholder="Digite o seu nome"></ion-input>
+          <ion-input placeholder="Digite o seu nome" formControlName="nome"></ion-input>
         </div>
 
         <div>
@@ -18,7 +18,7 @@
 
         <div>
           <ion-label class="email">Email</ion-label>
-          <ion-input placeholder="Digite o seu Email"></ion-input>
+          <ion-input formControlName="email" placeholder="Digite o seu Email"></ion-input>
         </div>
 
         <div>
@@ -30,7 +30,13 @@
           <ion-label class="csenha">Confirmar Senha</ion-label>
           <ion-input type="Password" placeholder="Confirmar Senha do Usuário"></ion-input>
         </div>
-      </div>
+
+      </form>
+
+      <ion-button expand="block" (click)="salvarCadastro()"> Manter Conectado</ion-button>
+    </div>
+      <div>
+
 
 
       <p>
