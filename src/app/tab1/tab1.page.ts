@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Cadastro } from '../models/Cadastro';
+import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  listaCadastro: Cadastro[] = [];
 
+  constructor(private storageService: StorageService) {}
+
+  async buscarCadastro(){
+    this.listaCadastro = await this.storageService.getAll();
+  }
+
+  ionViewDidEnter() {
+    this.buscarCadastro();
+  }
 }
