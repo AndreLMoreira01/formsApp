@@ -2,6 +2,9 @@ ion-content{
   --ion-background-color:#6d4fc0;
 }
 
+.linger{
+  text-align: center;
+}
 .bot{
   text-align: center;
 
@@ -18,12 +21,16 @@ ion-button {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  margin-top: 245px;
+  margin-top: 190px;
   font-weight: bold;
 
   ion-label {
   color: #111010;
   font-weight: bold;
-}
 
+}
+h1 {
+  color: #111010;
+  font-weight: bold;
+}
 }

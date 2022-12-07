@@ -5,6 +5,8 @@
   <div>
     <div class="a">
 
+      <h1>Registro</h1>
+
       <form [formGroup]="formRegistro">
         <div>
           <ion-label class="nome">Nome</ion-label>
@@ -32,15 +34,13 @@
         </div>
 
       </form>
-
-      <ion-button expand="block" (click)="salvarCadastro()"> Manter Conectado</ion-button>
     </div>
       <div>
 
+  <ion-button expand="block" (click)="salvarRegistro()"> Manter Conectado</ion-button>
 
-
-      <p>
-        <ion-checkbox slot="start"></ion-checkbox>
+      <p class="linger">
+        <ion-checkbox ></ion-checkbox>
         <ion-label> Manter Conectado</ion-label>
       </p>
 
