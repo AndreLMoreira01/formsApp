@@ -29,5 +29,8 @@ export class LoginPage implements OnInit {
       await this.storageService.set(this.login.email, this.login);
       alert('forms valido!')
     }
+    else{
+      alert('forms nao valido!')
+    }
   }
 }
